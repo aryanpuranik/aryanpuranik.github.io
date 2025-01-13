@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f7f7f5; /* Light neutral background */
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #a8d5ba, #87c9a3); /* Soft green gradient */
+            color: #333;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #87c9a3;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            color: white;
+            background-color: #6fbf8f; /* Medium green */
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1em;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #5ca87d;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .about h2 {
+            color: #6fbf8f; /* Medium green for headings */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            margin-bottom: 30px;
+        }
+
+        .skills h2 {
+            color: #6fbf8f;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-card h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .contact {
+            background: white; /* Neutral white background */
+            padding: 30px;
+            border-radius: 10px;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2em;
+            color: #000; /* Black text for the heading */
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #000; /* Black text for body text */
+            margin-bottom: 15px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: white; /* White text for email link */
+            background-color: #6fbf8f; /* Medium green button */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact a:hover {
+            background-color: #5ca87d;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Aryan Puranik</h1>
+        <p>Computer Science Engineer | MS in Information Systems</p>
+        <a href="Aryan_resume.pdf" target="_blank">Download CV</a>
+    </section>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Master’s student at Santa Clara University with a strong foundation in Computer Science, honed through my undergraduate studies. My academic journey has sparked a deep passion for exploring cutting-edge technologies, particularly in the realms of Generative AI and Data Analysis. I am intrigued by how AI and data-driven insights can drive innovation, solve complex problems, and empower organizations to make informed decisions.
+                With a curious mind and a drive for continuous learning, I am dedicated to building impactful solutions that leverage AI, data analysis, and technology to shape a smarter, more efficient future.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>AI</h3>
+                    <p>Proficient in developing and deploying artificial intelligence solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Proficient in data manipulation, analysis, and scripting.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <p>Strong skills in relational databases and querying.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Experience in building scalable and efficient backend systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or discuss opportunities, feel free to reach out!</p>
+            <p>Email: <a href="mailto:apuranik2@scu.edu">apuranik2@scu.edu</a></p>
+            <a href="mailto:apuranik2@scu.edu">Send an Email</a>
+        </section>
+    </div>
+</body>
+</html>
